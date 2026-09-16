@@ -1,0 +1,16 @@
+{
+  "name": "library-loans",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A library loans API modeling books, copies, members, and loans — built around one query and the index that makes it fast.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "seed": "node --no-warnings seed.js",
+    "bench": "node --no-warnings bench.js",
+    "test": "node --no-warnings --test"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
