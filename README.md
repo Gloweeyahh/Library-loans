@@ -7,7 +7,12 @@ given member, the books they currently have out.
 Plain Node, using the built-in `node:sqlite` module. No framework, no
 ORM, no separate database to provision. See "Why `node:sqlite`" below.
 
-**Live URL:** https://library-loans.onrender.com/
+**Live URL:** _add your deployed Render URL here before submitting_
+
+For the full data model — every table's purpose, every constraint and
+what it prevents, and which query would be first to struggle at ten
+times the data — see `DATA_MODEL.md`. This README stays focused on
+running the thing.
 
 ## Schema
 
@@ -276,4 +281,6 @@ deploy. Free-tier services sleep after 15 minutes idle and take
 - `seed.js` — generates books, copies, members, and 16,000+ loans
 - `server.js` — HTTP routing and the graded endpoint
 - `bench.js` — reproduces the before/after query plan measurement
+- `overdue-query-plan.js` — reproduces the "what breaks at 10x" analysis in `DATA_MODEL.md`
 - `schema.test.js`, `server.test.js` — automated checks
+- `DATA_MODEL.md` — the full data model: tables, constraints, and query plans
